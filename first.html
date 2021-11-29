@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Registration Page</h1>
+
+    <form method="post" action="#" onsubmit="submitDetails();">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstname">
+        </div>
+    <br>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastname">
+        </div>
+    <br>
+        <div>
+            <label for="mobileNo">Mobile No.</label>
+            <input type="text" name="mobileNo" id="mobileNo">
+        </div>  
+        
+        <br>
+    <div>
+        <label for="userGender">Gender</label>
+        <input type="radio" name="userGender" id=""> Male
+        <input type="radio" name="userGender" id=""> Female
+    </div>    
+    <br>
+
+    <div>
+        <label for="userEmail">Email</label>
+        <input type="email" name="userEmail" id="userEmail">
+    </div>
+    <br>
+    <div>
+        <label for="userInterest">Interests</label >
+        <input type="checkbox" name="userInterest" id="acept"> Watching Movie
+        <input type="checkbox" name="userInterest" id="acept"> Reading Books
+        <input type="checkbox" name="userInterest" id="acept"> Playing Games
+    </div>
+    <br>
+    <input type="submit" value="Submit Details" />
+</form>
+
+<br>
+<br>
+<button onclick="clickMe();">Click</button>
+
+<script>
+    function submitDetails(){
+       var firstName = document.getElementById("firstname").value;
+       var lastName = document.getElementById("lastname").value;
+       var mobile = document.getElementsByName("mobileNo").value;
+       var userEmail=document.getElementById("userEmail").value;
+       var userInterest = document.getElementById('acept').value;
+
+       
+
+       console.log(document.getElementsByTagName('div'));
+
+       
+
+
+      console.log(firstName, lastName, mobile,userEmail,userInterest);
+
+      
+    }
+
+    function clickMe(){
+      var x = 10;
+      var y = '10';
+      if(x === y){
+          console.log("Equals");          
+      } else {
+          console.log('Not equals');
+      }
+
+
+      var name = 10;
+      console.log(name);
+      name = "Laxminarayan"
+      console.log(name);
+    }
+</script>
+</body>
+</html>
